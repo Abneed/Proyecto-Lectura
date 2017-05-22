@@ -48,6 +48,8 @@
             // btnOpcionUno
             // 
             this.btnOpcionUno.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnOpcionUno.AutoSize = true;
+            this.btnOpcionUno.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnOpcionUno.Depth = 0;
             this.btnOpcionUno.Location = new System.Drawing.Point(200, 475);
             this.btnOpcionUno.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
@@ -63,6 +65,8 @@
             // btnOpcionDos
             // 
             this.btnOpcionDos.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnOpcionDos.AutoSize = true;
+            this.btnOpcionDos.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnOpcionDos.Depth = 0;
             this.btnOpcionDos.Location = new System.Drawing.Point(200, 525);
             this.btnOpcionDos.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
@@ -78,6 +82,8 @@
             // btnOpcionTres
             // 
             this.btnOpcionTres.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnOpcionTres.AutoSize = true;
+            this.btnOpcionTres.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnOpcionTres.Depth = 0;
             this.btnOpcionTres.Location = new System.Drawing.Point(425, 475);
             this.btnOpcionTres.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
@@ -92,6 +98,9 @@
             // 
             // btnOpcionCuatro
             // 
+            this.btnOpcionCuatro.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnOpcionCuatro.AutoSize = true;
+            this.btnOpcionCuatro.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnOpcionCuatro.Depth = 0;
             this.btnOpcionCuatro.Location = new System.Drawing.Point(425, 525);
             this.btnOpcionCuatro.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
@@ -118,6 +127,7 @@
             this.Text = "SeleccionarNombreImagenForm";
             ((System.ComponentModel.ISupportInitialize)(this.picboxImagen)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
