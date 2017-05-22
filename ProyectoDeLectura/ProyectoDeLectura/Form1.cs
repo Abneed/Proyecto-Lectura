@@ -7,17 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace ProyectoDeLectura
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MaterialForm
     {
-        List<Actividad> miListaDeActividades = new List<Actividad>();
-        Random miRandom = new Random();
-        Actividad miActividad = new Actividad();
         public Form1()
         {
             InitializeComponent();
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Green800, Primary.Green900, Primary.Green500, Accent.LightGreen200, TextShade.WHITE);
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -29,9 +32,9 @@ namespace ProyectoDeLectura
         }
         private void lnklblForma1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FormaActividadTipo1 miForma1 = new FormaActividadTipo1();
+            SeleccionarNombreImagenForm miForma = new SeleccionarNombreImagenForm();
             this.Visible = false;
-            miForma1.Show();
+            miForma.Show();
         }
 
         private void lnkAdministrador_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

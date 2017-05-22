@@ -1,0 +1,13 @@
+CREATE DATABASE ProyectoLectura;
+CREATE TABLE Images (Id int auto_increment PRIMARY KEY, Nombre varchar(255) NOT NULL, Categoria varchar(255) NOT NULL, PATH varchar(255) NOT NULL);
+
+INSERT INTO Images (Nombre, Categoria, PATH) VALUES ('Manzana', 'Alimento', ' C:\\Proyecto-Lectura\\ProyectoDeLectura\\Images\\Alimentos\\Manzana.jpg');
+INSERT INTO Images (Nombre, Categoria, PATH) VALUES ('Naranja', 'Alimento', 'C:\\Proyecto-Lectura\\ProyectoDeLectura\\Images\\Alimentos\\Naranja.jpg');
+INSERT INTO Images (Nombre, Categoria, PATH) VALUES ('Mango', 'Alimento', 'C:\\Proyecto-Lectura\\ProyectoDeLectura\\Images\\Alimentos\\Mango.jpg');
+INSERT INTO Images (Nombre, Categoria, PATH) VALUES ('Sandia', 'Alimento', 'C:\\Proyecto-Lectura\\ProyectoDeLectura\\Images\\Alimentos\\Sandia.jpg');
+INSERT INTO Images (Nombre, Categoria, PATH) VALUES ('Limon', 'Alimento', 'C:\\Proyecto-Lectura\\ProyectoDeLectura\\Images\\Alimentos\\Limon.jpg');
+INSERT INTO Images (Nombre, Categoria, PATH) VALUES ('Zanahoria', 'Alimento', 'C:\\Proyecto-Lectura\\ProyectoDeLectura\\Images\\Alimentos\\Zanahoria.jpg');
+INSERT INTO Images (Nombre, Categoria, PATH) VALUES ('Uva', 'Alimento', 'C:\\Proyecto-Lectura\\ProyectoDeLectura\\Images\\Alimentos\\Uva.jpg');
+INSERT INTO Images (Nombre, Categoria, PATH) VALUES ('Aguacate', 'Alimento', 'C:\\Proyecto-Lectura\\ProyectoDeLectura\\Images\\Alimentos\\Aguacate.jpg');
+INSERT INTO Images (Nombre, Categoria, PATH) VALUES ('Arroz', 'Alimento', 'C:\\Proyecto-Lectura\\ProyectoDeLectura\\Images\\Alimentos\\Arroz.png');
+INSERT INTO Images (Nombre, Categoria, PATH) VALUES ('Frijol', 'Alimento', 'C:\\Proyecto-Lectura\\ProyectoDeLectura\\Images\\Alimentos\\Frijol.jpg');

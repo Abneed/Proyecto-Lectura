@@ -6,68 +6,49 @@ using System.Threading.Tasks;
 
 namespace ProyectoDeLectura
 {
-    class Actividad:IEquatable<Actividad>,IComparable<Actividad>
+    class Actividad
     {
-        private String _strOpcion1;
-        public String Opcion1
+        private string _strDireccionImagen;
+        private string _strCategoria;
+        private int _intIDRespuesta;
+        private string[] _strNombres = new string[4];
+        private int[] _intIDs = new int[4];
+
+        public Actividad()
         {
-            get { return _strOpcion1; }
-            set { _strOpcion1 = value; }
+
         }
-        private String _strOpcion2;
-        public String Opcion2
-        {
-            get { return _strOpcion2; }
-            set { _strOpcion2 = value; }
+
+        public string DireccionImagen
+        { 
+            get { return _strDireccionImagen; }
+            set { _strDireccionImagen = value; }
         }
-        private String _strOpcion3;
-        public String Opcion3
+
+        public string Categoria
         {
-            get { return _strOpcion3; }
-            set { _strOpcion3 = value; }
-        }
-        private String _strOpcion4;
-        public String Opcion4
-        {
-            get { return _strOpcion4; }
-            set { _strOpcion4 = value; }
-        }
-        private String _strPregunta;
-        public String Pregunta
-        {
-            get { return _strPregunta; }
-            set { _strPregunta = value; }
-        }
-        private int _intRespuesta;
-        public int Respuesta
-        {
-            get { return _intRespuesta; }
-            set { _intRespuesta = value; }
-        }
-        private int _intNumeroDeActiviada;
-        public int NumeroDeActividad
-        {
-            get { return _intNumeroDeActiviada; }
-            set { _intNumeroDeActiviada = value; }
+            get { return _strCategoria; }
+            set { _strCategoria = value; }
         }
 
 
-        int IComparable<Actividad>.CompareTo(Actividad miActividad)
-        {
-            if (this.NumeroDeActividad > miActividad.NumeroDeActividad)
-                return 1;
-            else if (this.NumeroDeActividad < miActividad.NumeroDeActividad)
-                return -1;
-            else
-                return 0;
+        public int IdRespuesta
+        { 
+            get { return _intIDRespuesta; }
+            set { _intIDRespuesta = value; }
         }
-        public bool Equals(Actividad miActividad)
+
+        public string[] Nombres
         {
-            if (this.Opcion1 == miActividad.Opcion1 && this.Opcion2 == miActividad.Opcion2 && this.Opcion3 == miActividad.Opcion3 && this.Opcion4 == miActividad.Opcion4 && this.Pregunta == miActividad.Pregunta && this.Respuesta == miActividad.Respuesta&&this.NumeroDeActividad==miActividad.NumeroDeActividad)
-                return true;
-            else
-                return false;
-            
+            get { return _strNombres; }
+            set { _strNombres = value; }
         }
+
+        public int[] IDs
+        {
+            get { return _intIDs; }
+            set { _intIDs = value; }
+        }
+
     }
 }

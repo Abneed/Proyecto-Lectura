@@ -28,26 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblPregunta = new System.Windows.Forms.Label();
             this.btnOpcion4 = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnOpcion1 = new System.Windows.Forms.Button();
             this.btnOpcion2 = new System.Windows.Forms.Button();
             this.btnOpcion3 = new System.Windows.Forms.Button();
+            this.picboxImagen = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxImagen)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblPregunta
-            // 
-            this.lblPregunta.AutoSize = true;
-            this.lblPregunta.Location = new System.Drawing.Point(46, 37);
-            this.lblPregunta.Name = "lblPregunta";
-            this.lblPregunta.Size = new System.Drawing.Size(35, 13);
-            this.lblPregunta.TabIndex = 0;
-            this.lblPregunta.Text = "label1";
             // 
             // btnOpcion4
             // 
-            this.btnOpcion4.Location = new System.Drawing.Point(709, 233);
+            this.btnOpcion4.Location = new System.Drawing.Point(499, 520);
             this.btnOpcion4.Name = "btnOpcion4";
             this.btnOpcion4.Size = new System.Drawing.Size(75, 23);
             this.btnOpcion4.TabIndex = 4;
@@ -67,7 +59,7 @@
             // 
             // btnOpcion1
             // 
-            this.btnOpcion1.Location = new System.Drawing.Point(109, 233);
+            this.btnOpcion1.Location = new System.Drawing.Point(212, 520);
             this.btnOpcion1.Name = "btnOpcion1";
             this.btnOpcion1.Size = new System.Drawing.Size(75, 23);
             this.btnOpcion1.TabIndex = 6;
@@ -77,7 +69,7 @@
             // 
             // btnOpcion2
             // 
-            this.btnOpcion2.Location = new System.Drawing.Point(279, 233);
+            this.btnOpcion2.Location = new System.Drawing.Point(309, 520);
             this.btnOpcion2.Name = "btnOpcion2";
             this.btnOpcion2.Size = new System.Drawing.Size(75, 23);
             this.btnOpcion2.TabIndex = 7;
@@ -87,7 +79,7 @@
             // 
             // btnOpcion3
             // 
-            this.btnOpcion3.Location = new System.Drawing.Point(514, 233);
+            this.btnOpcion3.Location = new System.Drawing.Point(405, 520);
             this.btnOpcion3.Name = "btnOpcion3";
             this.btnOpcion3.Size = new System.Drawing.Size(75, 23);
             this.btnOpcion3.TabIndex = 8;
@@ -95,31 +87,39 @@
             this.btnOpcion3.UseVisualStyleBackColor = true;
             this.btnOpcion3.Click += new System.EventHandler(this.btnOpcion3_Click_1);
             // 
+            // picboxImagen
+            // 
+            this.picboxImagen.Location = new System.Drawing.Point(150, 100);
+            this.picboxImagen.Name = "picboxImagen";
+            this.picboxImagen.Size = new System.Drawing.Size(500, 350);
+            this.picboxImagen.TabIndex = 9;
+            this.picboxImagen.TabStop = false;
+            // 
             // FormaActividadTipo1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(922, 449);
+            this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.picboxImagen);
             this.Controls.Add(this.btnOpcion3);
             this.Controls.Add(this.btnOpcion2);
             this.Controls.Add(this.btnOpcion1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnOpcion4);
-            this.Controls.Add(this.lblPregunta);
             this.Name = "FormaActividadTipo1";
             this.Text = "Preguntas";
+            this.Load += new System.EventHandler(this.FormaActividadTipo1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picboxImagen)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblPregunta;
         private System.Windows.Forms.Button btnOpcion4;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnOpcion1;
         private System.Windows.Forms.Button btnOpcion2;
         private System.Windows.Forms.Button btnOpcion3;
+        private System.Windows.Forms.PictureBox picboxImagen;
     }
 }

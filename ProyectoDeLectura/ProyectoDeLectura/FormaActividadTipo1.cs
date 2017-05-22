@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MaterialSkin.Controls;
 
 namespace ProyectoDeLectura
 {
-    public partial class FormaActividadTipo1 : Form
+    public partial class FormaActividadTipo1 : MaterialForm
     {
         List<Actividad> miListaDeActividades1 = new List<Actividad>();
         List<Actividad> miListaDeActividades1Hechas = new List<Actividad>();
@@ -28,7 +29,8 @@ namespace ProyectoDeLectura
             miActividad.Opcion2 = "Gatito";
             miActividad.Opcion3 = "Tortuguita";
             miActividad.Opcion4 = "Pesesito";
-            miActividad.Pregunta = "Cual es el animalito que muestra la imagen";
+            miActividad.Pregunta = "¿Cual es el nombre del animal que se muestra en la imagen?";
+            picboxImagen.ImageLocation = @"C:\Proyecto-Lectura\ProyectoDeLectura\Images\Alimentos\Manzana.jpg";
             miActividad.Respuesta = 1;
             miActividad.NumeroDeActividad = 1;
             miListaDeActividades1.Add(miActividad);
@@ -36,7 +38,7 @@ namespace ProyectoDeLectura
             btnOpcion2.Text = miActividad.Opcion2;
             btnOpcion3.Text = miActividad.Opcion3;
             btnOpcion4.Text = miActividad.Opcion4;
-            lblPregunta.Text = miActividad.Pregunta;
+//          lblPregunta.Text = miActividad.Pregunta;
             this.Text = miActividad.Pregunta;
             miActividad2.Opcion1 = "P";
             miActividad2.Opcion2 = "G";
@@ -47,6 +49,7 @@ namespace ProyectoDeLectura
             miActividad2.NumeroDeActividad = 2;
             miListaDeActividades1.Add(miActividad2);
             miListaDeActividades1Hechas.Add(miActividad);
+            
         }
 
         private void btnOpcion4_Click(object sender, EventArgs e)
@@ -143,7 +146,7 @@ namespace ProyectoDeLectura
                             btnOpcion2.Text = miActividad.Opcion2;
                             btnOpcion3.Text = miActividad.Opcion3;
                             btnOpcion4.Text = miActividad.Opcion4;
-                            lblPregunta.Text = miActividad.Pregunta;
+                          //lblPregunta.Text = miActividad.Pregunta;
                             this.Text = miActividad.Pregunta;
                             bolModificado = true; 
                         }
@@ -172,6 +175,11 @@ namespace ProyectoDeLectura
             MessageBox.Show("Todas Las Actividades Han Sido Terminadas");
             bolListaLlena = false;
 
+
+        }
+
+        private void FormaActividadTipo1_Load(object sender, EventArgs e)
+        {
 
         }
     }
